@@ -44,6 +44,7 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
         //get: show all tasks
+        //okay
         get("/", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
             ArrayList<Task> tasks = Task.getAll();
